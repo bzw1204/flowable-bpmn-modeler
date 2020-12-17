@@ -1,0 +1,63 @@
+{
+  "name": "flowable-bpmn-modeler",
+  "version": "0.2.5",
+  "description": "基于 `vue` `ant design vue`和 `bpmn.io@7.0` ，实现 flowable 的 modeler 模型设计器",
+  "main": "dist/workflow-bpmn-modeler.umd.min.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "demo": "cross-env NODE_ENV=demo vue-cli-service build",
+    "lib": "cross-env NODE_ENV=lib vue-cli-service build",
+    "cdn": "cross-env NODE_ENV=cdn vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build": "cross-env NODE_ENV=build vue-cli-service build --target lib --inline-vue --entry package/index.js",
+    "prepublish": "yarn build",
+    "postpublish": "yarn lib && yarn cdn && yarn demo"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldSubmarine/workflow-bpmn-modeler.git"
+  },
+  "keywords": [
+    "vue",
+    "Ant design",
+    "bpmn",
+    "flowable",
+    "模型设计器"
+  ],
+  "author": {
+    "name": "剧终1204",
+    "email": "374856393@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bzw1204/flowable-bpmn-modeler/issues"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.2",
+    "bpmn-js": "^7.2.1",
+    "vcolorpicker": "^1.0.3",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.5.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "files": [
+    "dist",
+    "package",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
