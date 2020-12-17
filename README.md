@@ -5,10 +5,10 @@
 基于 [workflow-bpmn-modeler](https://github.com/GoldSubmarine/workflow-bpmn-modeler) 修改而来，原版采用 Vue element UI开发，有需要的可以链接直达，支持大佬！
 ## 预览
 
-![20201217173237](docs/picture/20201217173237.png)
-![202012171732371](docs/picture/202012171732371.png)
-![202012171732372](docs/picture/202012171732372.png)
-![202012171732373](docs/picture/202012171732373.png)
+![20201217173237](https://github.com/bzw1204/flowable-bpmn-modeler/blob/master/docs/picture/20201217173237.png)
+![202012171732371](https://github.com/bzw1204/flowable-bpmn-modeler/blob/master/docs/picture/202012171732371.png)
+![202012171732372](https://github.com/bzw1204/flowable-bpmn-modeler/blob/master/docs/picture/202012171732372.png)
+![202012171732373](https://github.com/bzw1204/flowable-bpmn-modeler/blob/master/docs/picture/202012171732373.png)
 
 ## 在线 demo
 
