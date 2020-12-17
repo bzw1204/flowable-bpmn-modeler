@@ -35,10 +35,12 @@ import Vue from 'vue'
 import App from './${appFileName}.vue'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+import colorPicker from 'vcolorpicker'
 
 Vue.config.productionTip = false
 
 Vue.use(Antd)
+Vue.use(colorPicker)
 
 new Vue({
   render: h => h(App)
