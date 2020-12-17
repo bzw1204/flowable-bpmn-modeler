@@ -12,6 +12,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./node_modules/vue-ref/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/vue-ref/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  install: function install(Vue) {\n    var options =\n      arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n    var directiveName = options.name || \"ref\";\n    Vue.directive(directiveName, {\n      bind: function bind(el, binding, vnode) {\n        Vue.nextTick(function() {\n          binding.value(vnode.componentInstance || el, vnode.key);\n        });\n        binding.value(vnode.componentInstance || el, vnode.key);\n      },\n      update: function update(el, binding, vnode, oldVnode) {\n        if (oldVnode.data && oldVnode.data.directives) {\n          var oldBinding = oldVnode.data.directives.find(function(directive) {\n            var name = directive.name;\n            return name === directiveName;\n          });\n          if (oldBinding && oldBinding.value !== binding.value) {\n            oldBinding && oldBinding.value(null, oldVnode.key);\n            binding.value(vnode.componentInstance || el, vnode.key);\n            return;\n          }\n        }\n        // Should not have this situation\n        if (\n          vnode.componentInstance !== oldVnode.componentInstance ||\n          vnode.elm !== oldVnode.elm\n        ) {\n          binding.value(vnode.componentInstance || el, vnode.key);\n        }\n      },\n      unbind: function unbind(el, binding, vnode) {\n        binding.value(null, vnode.key);\n      }\n    });\n  }\n};\n\n\n//# sourceURL=webpack:///./node_modules/vue-ref/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/vue-style-loader/lib/addStylesClient.js":
 /*!**************************************************************!*\
   !*** ./node_modules/vue-style-loader/lib/addStylesClient.js ***!
