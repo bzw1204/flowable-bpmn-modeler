@@ -14,9 +14,6 @@
 
 👉 https://bzw1204.github.io/flowable-bpmn-modeler/demo/
 
-```
-由于本项目么有上传到npm仓库，各位看官请自行下载集成或者使用大佬的版本
-```
 
 ## 安装
 
